@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel-Art-Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <h1>Pixel-Art-Editor 🎨</h1>
+
+  <div class="controls">
+    <label for="colorPicker">Farbe:</label>
+    <input type="color" id="colorPicker" value="#000000">
+    
+    <button id="eraser">Radiergummi</button>
+
+    <label for="gridSize">Rastergröße:</label>
+    <select id="gridSize">
+      <option value="16">16x16</option>
+      <option value="32">32x32</option>
+      <option value="48">48x48</option>
+      <option value="64">64x64</option>
+    </select>
+
+    <button id="clearCanvas">Löschen</button>
+    <button id="saveCanvas">Speichern</button>
+    <button id="loadCanvas">Laden</button>
+    <button id="download">Als PNG herunterladen</button>
+  </div>
+
+  <div class="canvas-container">
+    <div class="canvas" id="canvas"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
